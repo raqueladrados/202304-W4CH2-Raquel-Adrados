@@ -4,5 +4,5 @@ export type PersonalData = {
   birthday: number;
   gender: string;
   email: string;
-  checkbox: string;
+  checkbox: boolean;
 };
