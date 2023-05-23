@@ -1,4 +1,22 @@
+import { ButtonOptions } from "../../types/home.options";
+import { Link } from "react-router-dom";
 import { useState } from "react";
+
+type Propstype = {
+  options: ButtonOptions;
+};
+
+export function ButtonNavigation({ options }: Propstype) {
+  <nav>
+    <ul>
+      {options.map((item) => (
+        <li key={item.label}>
+          <Link to={item.url}>{item.label}</Link>
+        </li>
+      ))}
+    </ul>
+  </nav>;
+}
 export function Home() {
   const [PersonalData, setPersonalData] = useState({
     name: "",

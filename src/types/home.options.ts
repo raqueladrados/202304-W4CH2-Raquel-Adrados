@@ -1,4 +1,4 @@
-export type MenuOptions = {
+export type ButtonOptions = {
   url: string;
   label: string;
 }[];
